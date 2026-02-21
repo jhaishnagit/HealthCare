@@ -1,0 +1,155 @@
+/* src/components/Modals/Modals.css */
+/* Appointment Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999;
+}
+
+.close-modal:hover {
+  color: #333;
+}
+
+.modal-title {
+  color: #1a5c44;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e1e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #1a7f5c;
+}
+
+.appointment-type {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.type-option {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid #e1e8f0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.type-option:hover, .type-option.active {
+  border-color: #1a7f5c;
+  background-color: #f0f7ff;
+}
+
+.type-option i {
+  font-size: 24px;
+  color: #1a7f5c;
+  margin-bottom: 10px;
+}
+
+/* Custom Alert Modal */
+.alert-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1100;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.alert-icon {
+  font-size: 50px;
+  color: #f39c12;
+  margin-bottom: 20px;
+}
+
+.alert-title {
+  color: #1a5c44;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.alert-message {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.alert-btn {
+  background-color: #1a7f5c;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.alert-btn:hover {
+  background-color: #156d4f;
+}

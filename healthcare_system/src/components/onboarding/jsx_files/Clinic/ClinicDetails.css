@@ -1,0 +1,187 @@
+/* --------------------------------------
+   MAIN STYLES
+-------------------------------------- */
+.clinic-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.08);
+  margin: 20px auto;
+  max-width:1500px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2b4eff;
+  margin: 20px 0 10px;
+}
+
+/* ----------- GRID LAYOUTS ----------- */
+.form-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* ----------- INPUT STYLES ----------- */
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-field label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.input-field input,
+.input-field select,
+.textarea-box {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.textarea-box {
+  width: 100%;
+  min-height: 90px;
+  resize: none;
+}
+
+.error-text {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* ----------- BUTTONS ----------- */
+.gps-btn {
+  background: #00b894;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.next-btn {
+  background: #2b4eff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  float: right;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+/* --------------------------------------
+   MOBILE RESPONSIVE FIXES
+-------------------------------------- */
+@media (max-width: 768px) {
+
+  .clinic-card {
+    padding: 18px;
+    margin: 10px;
+    max-width: 100%;
+  }
+
+  /* 3-column → 1 column */
+  .form-grid-3,
+  .contact-info-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+
+  /* 2-column → 1 column */
+  .form-grid-2 {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+
+  /* Inputs full width */
+  .input-field {
+    width: 100%;
+  }
+
+  .input-field input,
+  .input-field select,
+  .textarea-box {
+    width: 100% !important;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Dropdown full width */
+  .input-field select {
+    max-width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  /* Error messages aligned properly */
+  .error-text {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  /* Buttons full width */
+  .gps-btn,
+  .next-btn {
+    width: 100%;
+    text-align: center;
+    float: none;
+    padding: 14px;
+    font-size: 16px;
+  }
+}
+
+
+/* --------------------------------------
+   EXTRA SMALL DEVICES (Under 480px)
+-------------------------------------- */
+@media (max-width: 480px) {
+
+  .clinic-card {
+    padding: 14px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  .input-field label {
+    font-size: 14px;
+  }
+
+  .textarea-box {
+    min-height: 70px;
+  }
+
+  .input-field select {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

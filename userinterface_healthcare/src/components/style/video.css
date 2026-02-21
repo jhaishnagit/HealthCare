@@ -1,0 +1,126 @@
+/* ================= SECTION ================= */
+.videos-section {
+  padding: 30px 16px;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+
+/* ================= HEADER ================= */
+.videos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.videos-header h2 {
+  font-size: 22px;
+  color: #222;
+}
+
+.view-more {
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ================= AUTO SCROLL ================= */
+.videos-scroll-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  touch-action: pan-x;
+}
+
+.videos-scroll-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: scroll-left 28s linear infinite;
+}
+
+/* Pause on hover (desktop only) */
+@media (hover: hover) {
+  .videos-scroll-wrapper:hover .videos-scroll-track {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ================= VIDEO CARD ================= */
+.video-card {
+  min-width: 260px;
+  height: 160px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  flex-shrink: 0;
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Play icon */
+.play-button {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 40px;
+  color: #fff;
+  background: rgba(0,0,0,0.25);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-card:hover .play-button {
+  opacity: 1;
+}
+
+/* ================= MOBILE VIEW ================= */
+@media (max-width: 768px) {
+  .videos-header h2 {
+    font-size: 18px;
+  }
+
+  .video-card {
+    min-width: 220px;
+    height: 135px;
+  }
+
+  .videos-scroll-track {
+    gap: 12px;
+    animation-duration: 22s; /* smoother on mobile */
+  }
+
+  .play-button {
+    font-size: 34px;
+    opacity: 1; /* always visible on mobile */
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+  .video-card {
+    min-width: 190px;
+    height: 120px;
+  }
+
+  .videos-scroll-track {
+    animation-duration: 20s;
+  }
+}

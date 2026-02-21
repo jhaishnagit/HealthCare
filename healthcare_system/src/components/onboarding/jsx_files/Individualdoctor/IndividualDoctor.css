@@ -1,0 +1,150 @@
+.doctor-form-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 20px auto;
+  border: 1px solid #e3e3e3;
+}
+
+.doctor-form-container h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* GRID - TWO COLUMNS */
+.doctor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+/* FULL WIDTH ELEMENT */
+.full-width {
+  grid-column: 1 / span 2;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group textarea {
+  height: 75px;
+  resize: none;
+}
+
+/* BUTTON WRAPPER — FULL WIDTH */
+.btn-wrapper {
+  grid-column: 1 / span 2;
+  text-align: right;
+}
+
+.next-btn {
+  padding: 12px 30px;
+  background: #1366d9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  background: #0b4fab;
+}
+
+/* -----------------------------------------
+   📱 MOBILE VIEW (TABLETS & PHONES)
+----------------------------------------- */
+@media (max-width: 768px) {
+
+  .doctor-form-container {
+    padding: 18px;
+    margin: 15px;
+    border-radius: 8px;
+  }
+
+  /* 2 columns → 1 column */
+  .doctor-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  /* Full width stays full width */
+  .full-width {
+    grid-column: 1 / span 1 !important;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  /* Button full width on mobile */
+  .btn-wrapper {
+    grid-column: 1 / span 1 !important;
+    text-align: center;
+  }
+
+  .next-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+/* -----------------------------------------
+   📱 EXTRA SMALL DEVICES (≤ 480px)
+----------------------------------------- */
+@media (max-width: 480px) {
+
+  .doctor-form-container {
+    padding: 15px;
+  }
+
+  .doctor-form-container h2 {
+    font-size: 18px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 13px;
+    padding: 9px;
+  }
+
+  .next-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

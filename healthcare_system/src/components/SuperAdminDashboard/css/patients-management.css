@@ -1,0 +1,182 @@
+/* ---------- PAGE WRAPPER ---------- */
+.pm-page-wrapper {
+  padding: 25px 40px;
+}
+
+.pm-page-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #1e293b;
+  text-align: center;
+}
+
+/* ---------- FILTERS ---------- */
+.pm-filter-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 22px;
+  justify-content: center;
+}
+
+.pm-search,
+.pm-select {
+  padding: 10px 14px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.pm-search {
+  width: 260px;
+}
+
+/* ---------- TABLE ---------- */
+.pm-table-box {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  overflow-x: auto;
+}
+
+.pm-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pm-table thead th {
+  background: #f1f5f9;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+  border-bottom: 2px solid #e2e8f0;
+  text-align: left;
+}
+
+.pm-table tbody tr {
+  transition: 0.25s;
+}
+
+.pm-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.pm-table td {
+  padding: 12px;
+  font-size: 14px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* ---------- BADGES ---------- */
+.badge-independent {
+  background: #e5edff;
+  color: #2757d5;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge-hospital {
+  background: #e9f8f0;
+  color: #15924b;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ---------- VIEW BUTTON ---------- */
+.pm-view-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #e5edff;
+  color: #2757d5;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+.pm-view-btn:hover {
+  background: #d8e5ff;
+}
+
+/* ---------- DRAWER OVERLAY ---------- */
+/* ---------- FIXED: overlay below top header ---------- */
+.pm-drawer-overlay {
+  position: fixed;
+  top: 70px;             /* MATCH YOUR HEADER HEIGHT */
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.28);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+}
+
+/* ---------- Drawer Box ---------- */
+.pm-drawer {
+  width: 420px;
+  height: calc(100vh - 70px);  /* subtract header height */
+  background: white;
+  padding: 30px;
+  overflow-y: auto;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.13);
+  animation: slideIn 0.3s ease;
+}
+
+/* Animation */
+@keyframes slideIn {
+  from { transform: translateX(40px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+
+/* Drawer Header */
+.pm-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.pm-close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Drawer Content */
+.pm-field label {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.pm-field p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+.pm-section {
+  padding-top: 15px;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 15px;
+}
+
+.pm-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2563eb;
+  border-left: 4px solid #2563eb;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,181 @@
+.form-container {
+  width: 100%;
+  max-width: 90%;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 20px auto;
+  border: 1px solid #e5e5e5;
+}
+
+.form-title {
+  font-size: 22px;
+  color: #0a4fa3;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.flex-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.flex-row .form-group {
+  flex: 1;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #0a4fa3;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #083c7d;
+}
+
+/* ---------------- MOBILE VIEW ---------------- */
+
+/* Tablets & larger phones (max-width: 600px) */
+@media (max-width: 600px) {
+  .form-container {
+    max-width: 95%;
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 20px;
+  }
+
+  .flex-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .submit-btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+/* Small phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 18px;
+  }
+
+  .form-title {
+    font-size: 18px;
+  }
+
+  .form-group input {
+    padding: 9px;
+    font-size: 14px;
+  }
+
+  .prev-btn,
+  .outline-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+}
+
+/* Very small devices (max-width: 360px) */
+@media (max-width: 360px) {
+  .form-container {
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .form-title {
+    font-size: 16px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 9px;
+  }
+}
+
+/* ---------------- BUTTONS ---------------- */
+
+.prev-btn {
+  background: #f0f0f5;
+  color: #333;
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: 2px solid #d6d6e0;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.prev-btn:hover {
+  background: #e7e7f3;
+  color: #111;
+  border-color: #b6b6d2;
+  transform: translateX(-3px);
+}
+
+.prev-btn:active {
+  transform: scale(0.96);
+}
+
+.outline-btn {
+  padding: 10px 20px;
+  border: 2px solid #0a4fa3;
+  background: transparent;
+  color: #0a4fa3;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.outline-btn:hover {
+  background: #0a4fa3;
+  color: white;
+  transform: translateY(-2px);
+}

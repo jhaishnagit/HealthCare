@@ -1,0 +1,174 @@
+/* src/styles/Appointment1.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f7ff;
+  color: #333;
+}
+
+/* Page container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* MAIN SPLIT VIEW */
+.results-container {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+/* LEFT LIST */
+.list-section {
+  flex: 0.9;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+/* HOSPITAL CARD */
+.hospital-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hospital-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.hospital-card h3 {
+  color: #1a7f5c;
+  margin-bottom: 6px;
+}
+
+.hospital-card .city {
+  font-size: 14px;
+  color: #555;
+}
+
+.hospital-card .phone {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* SERVICES */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.service-chip {
+  background: #e7f6f1;
+  color: #1a7f5c;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ROUTE BUTTON */
+.route-btn {
+  background-color: #1a7f5c;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.route-btn:hover {
+  background-color: #156d4f;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .results-container {
+    flex-direction: column;
+  }
+
+  .list-section {
+    max-height: unset;
+  }
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.distance-badge {
+  font-size: 13px;
+  background: #eef6ff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: #2b6cb0;
+}
+
+.type-badge {
+  display: inline-block;
+  background: #e7f6f1;
+  color: #1a7f5c;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin: 6px 0;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.services-text {
+  font-size: 14px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #1a7f5c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.btn-outline {
+  background: #fff;
+  border: 1px solid #1a7f5c;
+  color: #1a7f5c;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.btn-route {
+  background: #f0f7ff;
+  border: 1px solid #d0e2ff;
+  padding: 8px 14px;
+  border-radius: 6px;
+}

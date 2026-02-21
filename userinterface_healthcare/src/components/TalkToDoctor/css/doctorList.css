@@ -1,0 +1,49 @@
+/* =========================
+   DOCTOR PAGE
+========================= */
+.doctor-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* SEARCH */
+.search-container {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 10px 0 20px;
+  z-index: 5;
+}
+.search-box {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.search-box:focus {
+  border-color: #4facfe;
+}
+
+
+/* DOCTOR LIST */
+.doctor-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 10px;
+}
+
+/* EMPTY / LOADING */
+.loading,
+.empty {
+  text-align: center;
+  color: #6c757d;
+  margin-top: 30px;
+  font-size: 16px;
+}

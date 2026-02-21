@@ -1,0 +1,46 @@
+/* src/components/SearchSection.css */
+.search-section {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.search-box {
+  display: flex;
+  gap: 15px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #e1e8f0;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #1a7f5c;
+}
+
+.filter-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  background-color: #f0f7ff;
+  border: 1px solid #d0e2ff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #1a7f5c;
+  color: #ffffff;
+}

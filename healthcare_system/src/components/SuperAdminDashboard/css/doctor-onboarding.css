@@ -1,0 +1,73 @@
+.do-page-wrapper {
+  padding: 30px 40px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.do-page-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 25px;
+}
+
+.do-form-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+
+.do-input-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.do-input-group label {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 5px;
+}
+
+.do-input-group input,
+.do-input-group select,
+.do-input-group textarea {
+  padding: 12px;
+  border: 1px solid #d5dce0;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.do-input-group textarea {
+  height: 90px;
+  resize: none;
+}
+
+.do-upload-group {
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.do-upload-group input {
+  margin-top: 5px;
+}
+
+.do-submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.do-submit-btn:hover {
+  background: #1d4ed8;
+}

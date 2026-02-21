@@ -1,0 +1,64 @@
+/* MAIN HEADER WRAPPER — SIZE SAME AS BEFORE */
+.onboard-header {
+  background: linear-gradient(135deg, #7da8ff 0%, #5a8aff 60%, #7fb0ff 100%);
+  padding: 24px 18px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: -30px;
+}
+
+/* FLEX ROW (logo + name + cancel) */
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  /* same row height */
+  padding: 2px 0;
+}
+
+/* LEFT SIDE (logo + text) */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* LOGO — same size as before */
+.header-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+/* TITLE — same font size as your old header */
+.header-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+}
+
+/* CANCEL BUTTON — same size, better color */
+.cancel-btn {
+  background: rgba(27, 15, 136, 0.25);
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.cancel-btn:hover {
+  background: rgba(129, 109, 247, 0.38);
+}

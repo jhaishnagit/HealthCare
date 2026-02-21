@@ -1,0 +1,139 @@
+/* ===========================
+   PAGE WRAPPER
+=========================== */
+.rp-wrapper {
+  padding: 30px;
+  background: #f2f4f8;
+  min-height: 100vh;
+  animation: fadeIn 0.4s ease;
+}
+
+.rp-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #111827;
+}
+
+/* ===========================
+   KPI CARDS
+=========================== */
+.rp-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+.rp-card {
+  width: 270px;
+  padding: 22px 20px;
+  border-radius: 18px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: 0.25s ease;
+}
+
+.rp-card:hover {
+  transform: translateY(-5px);
+}
+
+.rp-card h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.rp-card p {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+/* Gradients */
+.gradient-blue { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+.gradient-purple { background: linear-gradient(135deg, #a855f7, #7c3aed); }
+.gradient-green { background: linear-gradient(135deg, #22c55e, #15803d); }
+
+/* ===========================
+   FILTERS
+=========================== */
+.rp-filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.rp-select {
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: white;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.rp-select:hover {
+  border-color: #2563eb;
+}
+
+.rp-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+  outline: none;
+}
+
+/* ===========================
+   REPORTS TABLE
+=========================== */
+.rp-table-box {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.rp-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.rp-table thead {
+  background: #eef2f7;
+}
+
+.rp-table th {
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #475569;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.rp-table td {
+  padding: 14px;
+  font-size: 15px;
+  color: #1f2937;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.rp-table tr {
+  transition: 0.2s;
+}
+
+.rp-table tr:hover {
+  background: #f8fafc;
+  transform: scale(1.002);
+}
+
+/* ===========================
+   FADE ANIMATION
+=========================== */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,95 @@
+/* src/components/HealthcareFacilities.css */
+.hospitals-list {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hospital-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.hospital-card:hover {
+  transform: translateY(-5px);
+}
+
+.hospital-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.hospital-name {
+  font-size: 20px;
+  color: #1a5c44;
+  margin-bottom: 5px;
+}
+
+.hospital-type {
+  display: inline-block;
+  background-color: #e6f7f0;
+  color: #1a7f5c;
+  padding: 3px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hospital-distance {
+  color: #666;
+  font-size: 14px;
+}
+
+.hospital-details {
+  color: #666;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.hospital-details i {
+  color: #1a7f5c;
+  margin-right: 5px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #1a7f5c;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #156d4f;
+}
+
+.btn-secondary {
+  background-color: #f0f7ff;
+  color: #1a7f5c;
+  border: 1px solid #d0e2ff;
+}
+
+.btn-secondary:hover {
+  background-color: #e6f7f0;
+}

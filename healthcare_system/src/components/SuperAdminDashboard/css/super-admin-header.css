@@ -1,0 +1,220 @@
+/* =========================================================
+   SUPER ADMIN HEADER — CLEAN PROFESSIONAL THEMING
+========================================================= */
+
+:root {
+  --panel: #ffffff;
+  --accent: #0a4fa3;
+  --muted: #6b7280;
+  --danger: #e63c3c;
+  --shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+body {
+  padding-top: 70px; /* space for header */
+}
+
+
+/* ------------------------------
+   MAIN HEADER WRAPPER
+------------------------------ */
+.super-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 22px;
+  background: var(--panel);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  box-shadow: var(--shadow);
+   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+  z-index: 1000;
+}
+.header-left,
+.header-center,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Make center flexible */
+.header-center {
+  flex: 1;
+  justify-content: center;
+}
+
+
+/* Dark mode */
+.super-header.dark {
+  background: #0f1724;
+  border-bottom-color: rgba(255,255,255,0.04);
+}
+
+/* ------------------------------
+   LEFT SECTION (Menu + Search)
+------------------------------ */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.top-logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-right: 16px;
+}
+
+.top-logo .accent {
+  color: #1f7fff;
+}
+
+.icon-btn {
+  background: transparent;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn.menu {
+  background: var(--panel);
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+/* Dark mode */
+.super-header.dark .icon-btn.menu {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.08);
+}
+
+.top-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: var(--shadow);
+}
+
+.super-header.dark .top-search {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.04);
+}
+
+.top-search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  width: 260px;
+  color: inherit;
+}
+
+/* ------------------------------
+   RIGHT SECTION
+------------------------------ */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Theme Toggle */
+.header-actions .icon-btn {
+  padding: 6px;
+  border-radius: 8px;
+}
+
+/* Notification Box */
+.notification-box {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.notification-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: var(--danger);
+  color: white;
+  font-size: 10px;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+/* ------------------------------
+   PROFILE BOX
+------------------------------ */
+.profile-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--panel);
+  border: 1px solid rgba(0,0,0,0.04);
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+.super-header.dark .profile-box {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.08);
+}
+
+.profile-name .name {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.profile-name .role {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+@media (max-width: 700px) {
+  .top-search input {
+    width: 140px;
+  }
+}
+
+@media (max-width: 500px) {
+  .profile-box {
+    display: none;
+  }
+  .top-search input {
+    width: 100px;
+  }
+}

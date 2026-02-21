@@ -1,0 +1,139 @@
+/* =========================================================
+   GLOBAL WRAPPER
+========================================================= */
+.sa-page-wrapper {
+  padding: 28px;
+  background: #f5f6fa;
+  min-height: 100vh;
+  animation: fadeIn 0.4s ease;
+}
+
+.sa-page-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #1c1f2e;
+  letter-spacing: -0.3px;
+  text-align: center;
+}
+
+/* =========================================================
+   SEARCH + FILTERS
+========================================================= */
+.sa-filter-box {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sa-search-input,
+.sa-select {
+  padding: 10px 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 14px;
+  background: white;
+  transition: 0.2s;
+}
+
+.sa-search-input {
+  width: 260px;
+}
+
+.sa-search-input:focus,
+.sa-select:focus {
+  border-color: #4a67ff;
+  box-shadow: 0 0 0 3px rgba(74,103,255,0.18);
+  outline: none;
+}
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+.sa-table-box {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid #e6e8f0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  overflow-x: auto;
+}
+
+/* =========================================================
+   TABLE STYLING
+========================================================= */
+.sa-data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sa-data-table thead tr {
+  background: #f1f4fb;
+}
+
+.sa-data-table th {
+  padding: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #53576d;
+  border-bottom: 2px solid #e8eaf1;
+  letter-spacing: 0.3px;
+}
+
+.sa-data-table td {
+  padding: 14px;
+  font-size: 14px;
+  color: #2f3349;
+  border-bottom: 1px solid #f1f2f6;
+}
+
+/* Hover Effect */
+.sa-data-table tbody tr {
+  transition: 0.2s ease;
+}
+
+.sa-data-table tbody tr:hover {
+  background: #f8faff;
+  transform: scale(1.002);
+}
+
+/* =========================================================
+   BADGES (Doctor Type / Status)
+========================================================= */
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.badge.green {
+  background: #d5f6e3;
+  color: #0c8c45;
+}
+
+.badge.blue {
+  background: #dbe7ff;
+  color: #2a55dd;
+}
+
+.badge.yellow {
+  background: #ffe7b8;
+  color: #b47507;
+}
+
+.badge.red {
+  background: #ffd4d4;
+  color: #c62828;
+}
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}

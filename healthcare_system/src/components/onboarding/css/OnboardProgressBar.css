@@ -1,0 +1,148 @@
+/* FULL-WIDTH TOP STRIP */
+.progress-wrapper {
+  width: 100%;
+  padding: 15px 0;
+  background: transparent;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* FLEX CONTAINER */
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  padding: 0 40px;
+}
+
+/* EACH STEP */
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 1;
+}
+
+/* ICON CIRCLE */
+.step-circle {
+  width: 48px;
+  height: 48px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  border: 2px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  opacity: 0.6;
+}
+
+.step-icon svg {
+  color: #6b7280;
+  transition: 0.3s;
+}
+
+/* ACTIVE BLUE */
+.step-circle.active {
+  background: #2563eb;
+  border-color: #2563eb;
+  opacity: 1 !important;
+}
+
+.step-circle.active .step-icon svg {
+  color: #fff !important;
+  transform: scale(1.1);
+}
+
+/* LABEL */
+.step-label {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  text-align: center;
+}
+
+/* CONNECTING LINE */
+.step-line {
+  position: absolute;
+  top: 24px;
+  right: -50%;
+  width: 100%;
+  height: 2px;
+  background: #d1d5db;
+}
+
+.step-line.active {
+  background: #2563eb;
+}
+
+/* ---------------------------------------------------
+      ⭐ MOBILE VIEW (TABLET + PHONE)
+--------------------------------------------------- */
+@media (max-width: 768px) {
+  .progress-container {
+    padding: 0 20px;
+    gap: 10px;
+  }
+
+  .step-circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .step-label {
+    font-size: 12px;
+  }
+
+  .step-line {
+    top: 20px;
+  }
+}
+
+/* ---------------------------------------------------
+      ⭐ SMALL MOBILE VIEW (Under 480px)
+--------------------------------------------------- */
+@media (max-width: 480px) {
+  .progress-wrapper {
+    padding: 12px 0;
+  }
+
+  .progress-container {
+    padding: 0 10px;
+    gap: 5px;
+  }
+
+  .step-circle {
+    width: 34px;
+    height: 34px;
+  }
+
+  .step-label {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .step-line {
+    top: 17px;
+  }
+}
+
+/* ---------------------------------------------------
+      ⭐ VERY SMALL SCREENS (Under 360px)
+--------------------------------------------------- */
+@media (max-width: 360px) {
+  .step-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .step-label {
+    font-size: 9px;
+  }
+
+  .progress-container {
+    gap: 3px;
+  }
+}

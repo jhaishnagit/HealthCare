@@ -1,0 +1,134 @@
+/* MAIN LAYOUT */
+.med-wrapper {
+  display: flex;
+  background: #f0f4f8;
+}
+
+/* MAIN AREA */
+.med-main {
+  flex: 1;
+  padding: 110px 20px 20px;
+  transition: 0.3s ease;
+}
+
+/* HEADER FIXED */
+.med-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background: #fff;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  justify-content: space-between;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+/* SIDEBAR */
+.med-sidebar {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 90px);
+  background: #003f63;
+  padding: 22px;
+  color: white;
+  overflow-y: auto;
+}
+
+/* DASHBOARD */
+.dashboard-container {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+/* CARD ROWS */
+.cards-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+/* EACH CARD */
+.dash-card {
+   flex: 1 1 calc(20% - 20px); /* 5 cards per row */
+  min-width: 230px;
+  padding: 20px;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.dash-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.dash-card p {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* COLORS */
+.dash-card.primary { border-left: 6px solid #1f3c88; }
+.dash-card.info { border-left: 6px solid #2196f3; }
+.dash-card.warning { border-left: 6px solid #ff9800; }
+.dash-card.danger { border-left: 6px solid #d9534f; }
+.dash-card.success { border-left: 6px solid #4caf50; }
+.dash-card.purple { border-left: 6px solid #9c27b0; }
+
+/* GRAPHS GRID */
+.graph-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.graph-card {
+  background: white;
+  flex: 1;
+  min-width: 380px;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+/* TABLES */
+.section-subtitle {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  color: #1f3c88;
+  font-weight: 600;
+}
+
+.styled-table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.styled-table th {
+  background: #f7f9fc;
+  font-weight: bold;
+  color: #333;
+}

@@ -1,0 +1,27 @@
+/* src/components/BookingSection.css */
+
+/* RIGHT MAP */
+.map-section {
+  flex: 1.1;
+  position: sticky;
+  top: 100px;
+}
+
+#map {
+  height: 600px;
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .map-section {
+    position: relative;
+    top: unset;
+  }
+
+  #map {
+    height: 400px;
+  }
+}

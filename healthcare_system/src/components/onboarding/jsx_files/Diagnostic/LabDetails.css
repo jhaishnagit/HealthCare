@@ -1,0 +1,207 @@
+.diagnostic-form-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 20px auto;
+  border: 1px solid #e3e3e3;
+}
+
+/* Next Button */
+.next-btn {
+  padding: 12px 28px;
+  background: #1366d9;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  background: #0f56b5;
+}
+
+/* Button alignment */
+.btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.diagnostic-form-container h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* GRID 2-COLUMNS DESKTOP */
+.diagnostic-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+/* FULL WIDTH ROW */
+.full-width {
+  grid-column: 1 / span 2;
+}
+
+/* INPUT BASE STYLES */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group textarea {
+  height: 75px;
+  resize: none;
+}
+
+/* Hover again (duplicate in your file) */
+.next-btn:hover {
+  background: #0b4fab;
+}
+
+
+/* ---------------------------------------------------------
+      ⭐⭐⭐  MOBILE RESPONSIVE FIXES  (VERY IMPORTANT) ⭐⭐⭐
+---------------------------------------------------------- */
+@media (max-width: 768px) {
+
+  .diagnostic-form-container {
+    padding: 18px;
+    margin: 10px;
+    max-width: 100%;
+  }
+
+  /* Convert 2-column → 1-column */
+  .diagnostic-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+  /* Ensure all inputs fit mobile width */
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* ⭐ Dropdowns (State, City, Type) FIX — Stay inside mobile screen */
+  .form-group select {
+    max-width: 100%;
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background-size: 12px;
+    text-align-last: center; /* centers selected text */
+  }
+
+  .form-group select option {
+    white-space: normal; /* allows wrapping inside pop-up */
+    font-size: 14px;
+  }
+
+  /* Button full width */
+  .next-btn {
+    width: 100%;
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  .btn-wrapper {
+    justify-content: center;
+  }
+}
+
+
+/* ---------------------------------------------------------
+      EXTRA SMALL MOBILE (Under 480px)
+---------------------------------------------------------- */
+@media (max-width: 480px) {
+
+  .diagnostic-form-container {
+    padding: 14px;
+  }
+
+  .diagnostic-form-container h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group textarea {
+    height: 65px;
+  }
+
+  .form-group select {
+    font-size: 14px;
+  }
+
+  .next-btn {
+    font-size: 15px;
+    padding: 13px;
+  }
+}
+
+/* ⭐ FORCE ALL SELECT DROPDOWNS TO OPEN INSIDE BOX ON MOBILE */
+@media (max-width: 768px) {
+
+  /* Wrap each select so overflow is clipped */
+  .form-group {
+    position: relative;
+    overflow: hidden; 
+  }
+
+  /* The dropdown popup will now stay inside this wrapper */
+  select {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Dropdown list styling */
+  select option {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+}
+
+/* Extra fix for very small devices */
+@media (max-width: 480px) {
+  .form-group {
+    overflow: visible; 
+  }
+}
